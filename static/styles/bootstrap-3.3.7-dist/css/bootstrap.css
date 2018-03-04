@@ -1084,6 +1084,7 @@ html {
 
 body {
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), url("clock.jpg");
+  background-size: cover;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
@@ -1354,7 +1355,7 @@ a.text-success:focus {
   text-weight: bold;
   font-family: Arial;
   font-size: medium;
-  color: #11557C;
+  color: #2b669a;
 }
 a.text-info:hover,
 a.text-info:focus {
@@ -1589,9 +1590,9 @@ pre code {
 }
 .container {
   padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-right:auto;
 }
 @media (min-width: 768px) {
   .container {
@@ -2559,7 +2560,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #555;
+  color: #a94442;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -3008,10 +3009,14 @@ select[multiple].input-lg {
 }
 .btn {
   display: inline-block;
+  padding-top: 8px;
   padding: 6px 12px;
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: normal;
+  font-family: Arial;
+  color: black;
+  opacity: .5;
   line-height: 1.42857143;
   text-align: center;
   white-space: nowrap;
@@ -3024,7 +3029,8 @@ select[multiple].input-lg {
       -ms-user-select: none;
           user-select: none;
   background-image: none;
-  border: 1px solid transparent;
+  background-color: #5bc0de;
+  border: 1px solid black;
   border-radius: 4px;
 }
 .btn:focus,
@@ -3034,12 +3040,12 @@ select[multiple].input-lg {
 .btn:active.focus,
 .btn.active.focus {
   outline: 5px auto -webkit-focus-ring-color;
+  background-color:#a94442;
   outline-offset: -2px;
 }
-.btn:hover,
-.btn:focus,
-.btn.focus {
-  color: #333;
+
+.btn:hover{
+  color: red;
   text-decoration: none;
 }
 .btn:active,
@@ -4967,6 +4973,7 @@ a.badge:focus {
   padding-bottom: 30px;
   margin-bottom: 30px;
   color: inherit;
+  word-wrap: break-word;
   background-color: #eee;
 }
 .jumbotron h1,
