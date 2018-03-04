@@ -5,79 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>No Sleep For The Week</title>
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='fontawesome-free-5.0.8/web-fonts-with-css/css/fontawesome-all.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/bootstrap-3.3.7-dist/css/bootstrap.css') }}">
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/stylesheet.css') }}">
 </head>
 
 <body>
     <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Brought to you by <span class="text-success">The Avengers</span></a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Sleep Is For The Week</div>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="https://github.com/KirstinBoni/NoSleepForTheWeek"><i class="fab fa-github"></i></a></li>
+            </ul>
         </div>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="https://github.com/KirstinBoni/NoSleepForTheWeek"><img class="img-thumbnail" src="static/styles/Octocat.png"></a></li>
-        </ul>
-      </div>
     </nav>
-    <div class="page-header">
-        <h1>Sleep is For the Week</h1>
-    </div>
-    <div class="jumbotron">
-        <h2><span class="text-danger">Tired?</span> Struggling to stay <span class="text-danger">awake</span>? We're your solution! Just enter your information and anytime
-            you succomb to <span class="text-danger">unwanted sleep</span>, we are here to wake you up.
-        </h2>
-    </div>
     <div class="container-fluid">
         {% block content %}{% endblock %}
     </div>
-    <div class="container-fluid">
-      <div class="row" style="float: none; margin: 0 auto;">
-        <div class="col-md-11">
-        <form>
-          <div class="form-group">
-            <label for="InputEmail">Email address</label>
-            <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter email">
-            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-          </div>
-        </form>
-        <form>
-          <div class="form-group">
-            <label for="Age">Age</label>
-            <input type="age" class="form-control" id="Age" aria-describedby="emailHelp" placeholder="Enter age">
-            <small id="ageHelp" class="form-text text-muted">We'll never share your age with anyone else ;) .</small>
-          </div>
-        </form>
-      </div>
-      </div>
-      <div class="row" style="float: none; margin: 0 auto;">
-        <div class="col-md-1">
-            <img class="img-circle" src="/static/styles/bbygroot.jpg">
-        </div>
-        <div class="col-md-10">
-            <input class="btn" value="I want a Baby Groot alarm, gentle and sweet!"></input>
-        </div>
-      </div>
-      <div class="row" style="float: none; margin: 0 auto;">
-        <div class="col-md-1">
-          <img class="img-circle" src="/static/styles/teengroot.jpg">
-        </div>
-        <div class="col-md-10">
-            <input class="btn" value="I want a Teenager Groot alarm, grouchy and annoying!"></input>
-        </div>
-      </div>
-      <div class="row" style="float: none; margin: 0 auto;">
-        <div class="col-md-1">
-          <img class="img-circle" src="/static/styles/adultgroot.jpg">
-        </div>
-        <div class="col-md-10">
-            <input class="btn" value="I want an Adult Groot alarm, aggressive and firm!"></input>
-        </div>
-      </div>
-    </div>
     <div class="footer">
-
+        <a class="navbar-brand" href="http://marvel.com/movies">Brought to you by <span class="text-success">The Avengers</span></a>
     </div>
     {% block scripts %}{% endblock %}
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
