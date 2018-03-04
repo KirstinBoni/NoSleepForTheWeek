@@ -61,7 +61,6 @@ dfn {
 }
 h1 {
   margin: .67em 0;
-  font-size: 2em;
 }
 mark {
   color: #000;
@@ -1414,6 +1413,7 @@ a.bg-danger:focus {
 .page-header {
   font-family: 'Muli', sans-serif;
   font-weight: bold;
+  font-size: xx-large;
   color: white;
   padding-left: 9px;
   margin: 40px 0 0px;
